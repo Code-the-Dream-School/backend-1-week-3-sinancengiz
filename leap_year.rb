@@ -12,10 +12,7 @@ def leap_year
     
     leap_years_list = []
     for year in starting_year..ending_year
-        if year % 4 == 0 && year % 100 != 0
-            leap_years_list.push(year)
-        end
-        if year % 400 == 0
+        if year % 4 == 0 && year % 100 != 0 || year % 400 == 0
             leap_years_list.push(year)
         end
     end
